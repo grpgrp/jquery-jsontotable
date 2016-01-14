@@ -117,10 +117,8 @@
       }
 
       /**
-      /* MODIFIED: options.header ? 1 : 0
-      /* to eliminate duplicating header as the first row of data 
       **/
-      for (i = (options.header ? 1 : 0); i < obj.length; i++) { 
+      for (i = 0; i < obj.length; i++) { 
         if (dictType && headerObj) {
           var bodyItem = {};
           for (key in headerObj) {
